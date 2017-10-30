@@ -1,3 +1,52 @@
-<p>
-  orderlist works!
-</p>
+<div class="order-list">
+  <div class="page-title"><h4>Your Orders</h4></div> 
+  <div fxLayout.xs="column">
+    <mat-card fxFlex.gt-xs="50%" fxFlex.gt-md="25%">
+      <mat-card-header>
+      </mat-card-header>
+      <mat-card-content> 
+        <div fxLayout="row" fxLayoutAlign="space-between">
+          <div class="product-thumb" fxFlex="30">
+            <img src="./assets/img/shoe.jpg" alt="Product Img">
+          </div>
+          <div class="product-details" fxFlex="60" fxFlexOffset="5">
+            <h4>Converse sneakers</h4>
+            <p class="offer-price">Rs 3000 <span>Rs 4000</span></p>
+            <div class="product-rating">
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star_border</mat-icon>
+              <mat-icon>star_border</mat-icon>
+            </div>  
+            <div class="item-left">
+              (<span>18</span>) items left
+            </div>        
+          </div>
+          <div fxLayout="row" fxLayoutAlign="end center" class="remove-icon">
+            <mat-icon>close</mat-icon>
+          </div>
+        </div>
+        <mat-divider></mat-divider>
+      </mat-card-content>      
+      <mat-card-actions>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+          <div class="product_qty">Qty <span>1</span></div>    
+          <mat-chip-list>
+            <mat-chip color="primary" selected="true">Like</mat-chip>
+            <mat-chip color="accent" selected="true">Comment</mat-chip>
+          </mat-chip-list>
+        </div>
+      </mat-card-actions>  
+    </mat-card>
+
+    <div fxLayout="column" fxFlexOffset="5">
+      Total Rs 3000
+    </div>
+
+    <div fxLayout="column" fxFlexOffset="5">
+      <button mat-button>Proceed to Payment</button>
+    </div>    
+    
+  </div>
+</div>

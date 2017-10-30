@@ -1,0 +1,50 @@
+.order-list {
+    padding: 0 10px;
+}
+.page-title {
+    min-height: 50px; 
+    line-height: 50px;
+}
+.mat-card-content {
+    margin-bottom: 0;
+}
+.order-list .product-thumb img {
+    width: 100%;
+}
+.order-list .remove-icon .mat-icon {
+    color: #CCC;
+    font-size: 16px;
+}
+.order-list .item-left {
+    font-weight: lighter;
+}
+.order-list .item-left span{
+    font-weight: bold;
+}
+.order-list .offer-price {
+    color: green;
+}
+.order-list .offer-price span {
+    text-decoration: line-through;
+    color: #CCC;
+    font-style: italic;
+}
+.order-list .product-rating .mat-icon{
+    font-size: 14px;
+    color: orange;
+    width: 12px;
+}
+.order-list .product_qty span{
+    border: 2px solid #CCC;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+    line-height: 20px;
+}
+.mat-card-actions {
+    padding-top: 0;
+}
