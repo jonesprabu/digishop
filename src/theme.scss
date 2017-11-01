@@ -1,0 +1,173 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+$j1s-mat-brown: (
+    50: #ffb020,
+    100: #ffa707,
+    200: #ec9800,
+    300: #d38800,
+    400: #b97700,
+    500: #a06700,
+    600: #865700,
+    700: #6d4600,
+    800: #533600,
+    900: #3a2500,
+    A100: #ffb93a,
+    A200: #ffc253,
+    A400: #ffcb6d,
+    A700: #201500,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: $white-87-opacity,
+        800: $white-87-opacity,
+        900: $white-87-opacity,
+        A100: $black-87-opacity,
+        A200: white,
+        A400: white,
+        A700: white,
+    )
+);
+
+$j1s-mat-yellow: (
+    50 : #664f00,
+    100: #806300,
+    200: #997600,
+    300: #b38a00,
+    400: #cc9e00,
+    500: #e6b100,
+    600: #ffcb1a,
+    700: #ffd133,
+    800: #ffd64d,
+    900: #ffdc66,
+    A100: #ffcb1a,
+    A200: #ffc500,
+    A400: #e6b100,
+    A700: #ffe280,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: $white-87-opacity,
+        800: $white-87-opacity,
+        900: $white-87-opacity,
+        A100: $black-87-opacity,
+        A200: white,
+        A400: white,
+        A700: white,
+    )
+);
+
+$deep-purple: (
+	50: #ede7f6,
+	100: #d1c4e9,
+	200: #b39ddb,
+	300: #9575cd,
+	400: #7e57c2,
+	500: #673ab7,
+	600: #5e35b1,
+	700: #512da8,
+	800: #4527a0,
+	900: #311b92,
+	A100: #b388ff,
+	A200: #7c4dff,
+	A400: #651fff,
+	A700: #6200ea,
+	contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: $white-87-opacity,
+        800: $white-87-opacity,
+        900: $white-87-opacity,
+        A100: $black-87-opacity,
+        A200: white,
+        A400: white,
+        A700: white,
+    )
+);
+
+$pink: (
+	50: #fce4ec,
+	100: #f8bbd0,
+	200: #f48fb1,
+	300: #f06292,
+	400: #ec407a,
+	500: #e91e63,
+	600: #d81b60,
+	700: #c2185b,
+	800: #ad1457,
+	900: #880e4f,
+	A100: #ff80ab,
+	A200: #ff4081,
+	A400: #f50057,
+	A700: #c51162,
+	contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: $white-87-opacity,
+        800: $white-87-opacity,
+        900: $white-87-opacity,
+        A100: $black-87-opacity,
+        A200: white,
+        A400: white,
+        A700: white,
+    )
+
+);
+
+
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$j1s-app-primary: mat-palette($j1s-mat-brown);
+$j1s-app-accent:  mat-palette($j1s-mat-yellow);
+
+// The warn palette is optional (defaults to red).
+$j1s-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$j1s-app-theme: mat-light-theme($j1s-app-primary, $j1s-app-accent, $j1s-app-warn);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$dr-app-primary: mat-palette($deep-purple);
+$dr-app-accent:  mat-palette($pink);
+
+// The warn palette is optional (defaults to red).
+$dr-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$dr-app-theme: mat-light-theme($dr-app-primary, $dr-app-accent, $dr-app-warn);
+
+
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($dr-app-theme);
