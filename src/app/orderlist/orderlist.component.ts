@@ -8,12 +8,11 @@ import { Http } from '@angular/http';
 })
 export class OrderlistComponent implements OnInit {
 
-  myData: Array<any>;
+  myData: any;
 
   constructor(private http: Http) {
     
     this.http.get('https://still-reaches-11827.herokuapp.com/api/orders/59f70ca1910bc40004b8ad18')
-      .map(response => response.json())
       .subscribe(res => this.myData = res);
   }
 
