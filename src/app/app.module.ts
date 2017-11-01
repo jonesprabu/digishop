@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from './shared/material.module';
-import { SDKBrowserModule } from './shared/sdk/index';
 
 import { AppComponent } from './app.component';
 import { OrderlistComponent } from './orderlist/orderlist.component';
@@ -24,8 +23,7 @@ import { HeaderComponent } from './header/header.component';
     FormsModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MaterialModule,
-    SDKBrowserModule.forRoot()
+    MaterialModule
   ],
   providers: [],
   entryComponents : [ AppComponent ],
