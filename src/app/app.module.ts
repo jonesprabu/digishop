@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpModule } from '@angular/http';
 
 import { MaterialModule } from './shared/material.module';
 
@@ -22,6 +23,7 @@ import { HeaderComponent } from './header/header.component';
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
+    HttpModule,
     FlexLayoutModule,
     MaterialModule
   ],
